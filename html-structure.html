@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and Structure | Understanding Web Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Consistent navigation menu -->
+    <header class="site-header">
+        <a class="logo" href="index.html">WEB DESIGN</a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="html-structure.html">HTML</a></li>
+                <li><a href="css-design.html">CSS</a></li>
+                <li><a href="key-concepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <p class="eyebrow">TOPIC ONE</p>
+            <h1>HTML and Website Structure</h1>
+            <p>HTML provides the foundation and structure of a webpage.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>What Is HTML?</h2>
+            <p>
+                HTML stands for HyperText Markup Language. It uses elements
+                to organize content such as headings, paragraphs, images,
+                links, lists, and tables. Browsers read HTML to determine
+                how content is structured.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h2>Common HTML Elements</h2>
+            <ul class="term-list">
+                <li><code>&lt;h1&gt;</code> defines a main heading.</li>
+                <li><code>&lt;p&gt;</code> defines a paragraph.</li>
+                <li><code>&lt;a&gt;</code> creates a hyperlink.</li>
+                <li><code>&lt;img&gt;</code> displays an image.</li>
+                <li><code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> create a list.</li>
+                <li><code>&lt;table&gt;</code> organizes information into rows and columns.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Semantic HTML</h2>
+            <p>
+                Semantic HTML elements describe the purpose of a section.
+                For example, <code>&lt;header&gt;</code> identifies introductory
+                content, <code>&lt;nav&gt;</code> identifies navigation,
+                <code>&lt;main&gt;</code> identifies the primary content, and
+                <code>&lt;footer&gt;</code> identifies footer information.
+            </p>
+            <p>
+                Semantic elements make code easier to understand and can help
+                assistive technologies interpret the page.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h2>HTML Compared with CSS</h2>
+            <div class="table-wrapper">
+                <table>
+                    <caption>Different roles in website development</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Feature</th>
+                            <th scope="col">HTML</th>
+                            <th scope="col">CSS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Main purpose</th>
+                            <td>Structures content</td>
+                            <td>Styles content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Examples</th>
+                            <td>Headings, paragraphs, links</td>
+                            <td>Colors, fonts, spacing</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">File extension</th>
+                            <td>.html</td>
+                            <td>.css</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Example of HTML</h2>
+            <pre><code>&lt;article&gt;
+    &lt;h2&gt;My First Article&lt;/h2&gt;
+    &lt;p&gt;This is an example of webpage content.&lt;/p&gt;
+    &lt;a href="index.html"&gt;Return Home&lt;/a&gt;
+&lt;/article&gt;</code></pre>
+            <p>
+                The article element groups related content. The heading
+                identifies the topic, the paragraph provides information,
+                and the link allows the visitor to navigate.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Created for IT 3203 as a class project.</p>
+        <p><a href="https://ksuweb.github.io/IT3203/" target="_blank"
+              rel="noopener noreferrer">IT 3203 Course Website</a></p>
+    </footer>
+</body>
+</html>
