@@ -1,26 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewpoint" content="width=device-width,intial-scale=1.0">
-  <title>KSU IT 3203</title>
-  <link rel="stylesheet" href="style-a.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Understanding Web Design</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-  
 <body>
-  <main>
-<h1>KSU IT 3203 Introduction to Web Development</h1>
+    <!-- Main navigation shared across all six pages -->
+    <header class="site-header">
+        <a class="logo" href="index.html">WEB DESIGN</a>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="key-concepts.html">Key Concepts</a>
-  <a href="topic-1.html">Topic 1</a>
-  <a href="topic-2.html">Topic 2</a>
-  <a href="about.html">About</a>
-  <a href="refrences.html">Refrences</a>
-  
-</nav>
-  </main>
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="html-structure.html">HTML</a></li>
+                <li><a href="css-design.html">CSS</a></li>
+                <li><a href="key-concepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Introduction section -->
+        <section class="hero">
+            <p class="eyebrow">IT 3203 WEB DEVELOPMENT PROJECT</p>
+            <h1>Understanding the Web, One Page at a Time.</h1>
+            <p>
+                Welcome to my website about web design! This project explores
+                how HTML, CSS, and responsive design work together to create
+                websites that are organized, visually appealing, and easy to use.
+            </p>
+            <a class="button" href="html-structure.html">Start Exploring</a>
+        </section>
+
+        <!-- Project abstract -->
+        <section class="content-section">
+            <h2>Project Abstract</h2>
+            <p>
+                Web design involves planning and creating the structure,
+                appearance, and usability of websites. HTML organizes webpage
+                content, while CSS controls its presentation. Responsive design
+                helps websites adapt to different screen sizes. This project
+                introduces these concepts and explains how they contribute to
+                an effective website.
+            </p>
+        </section>
+
+        <!-- Image with descriptive alternative text -->
+        <section class="content-section">
+            <h2>What Is Web Design?</h2>
+            <img
+                class="feature-image"
+                src="images/web-design.jpg"
+                alt="A workspace showing a computer used for website design"
+            >
+            <p>
+                Web design combines technical skills and creative decisions.
+                A good website should present information clearly, look
+                consistent, and allow visitors to find what they need.
+            </p>
+        </section>
+
+        <!-- Key terms -->
+        <section class="content-section">
+            <h2>Key Terms</h2>
+            <ul class="term-list">
+                <li><strong>HTML:</strong> The language used to structure webpage content.</li>
+                <li><strong>CSS:</strong> The language used to style and lay out webpages.</li>
+                <li><strong>Responsive Design:</strong> A design approach that adapts to different screens.</li>
+                <li><strong>Accessibility:</strong> Designing websites so people with different abilities can use them.</li>
+            </ul>
+        </section>
+
+        <!-- Table of contents linking to all five other pages -->
+        <section class="content-section">
+            <h2>Table of Contents</h2>
+            <div class="card-grid">
+                <article class="content-card">
+                    <h3><a href="html-structure.html">1. HTML and Structure</a></h3>
+                    <p>Learn how HTML organizes content on a webpage.</p>
+                </article>
+
+                <article class="content-card">
+                    <h3><a href="css-design.html">2. CSS and Visual Design</a></h3>
+                    <p>Explore colors, fonts, selectors, spacing, and layouts.</p>
+                </article>
+
+                <article class="content-card">
+                    <h3><a href="key-concepts.html">3. Key Concepts</a></h3>
+                    <p>Review seven important web design terms.</p>
+                </article>
+
+                <article class="content-card">
+                    <h3><a href="references.html">4. References and Resources</a></h3>
+                    <p>Find documentation and learning materials.</p>
+                </article>
+
+                <article class="content-card">
+                    <h3><a href="about.html">5. About Me</a></h3>
+                    <p>Learn about the student and the purpose of this project.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Required course-project notice -->
+    <footer class="site-footer">
+        <p>Created for IT 3203 as a class project.</p>
+        <p>
+            <a href="https://ksuweb.github.io/IT3203/" target="_blank"
+               rel="noopener noreferrer">IT 3203 Course Website</a>
+        </p>
+    </footer>
 </body>
 </html>
