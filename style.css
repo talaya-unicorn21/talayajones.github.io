@@ -1,0 +1,386 @@
+/* =========================================
+   IT 3203 WEB DESIGN PROJECT
+   Shared stylesheet for all six pages
+   ========================================= */
+
+/* 1. Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #333333;
+    background-color: #faf7f8;
+}
+
+/* 2. Element selectors */
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+    color: #292329;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 3. Shared navigation */
+.site-header {
+    background-color: #252525;
+    color: #ffffff;
+    padding: 18px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.35rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    display: block;
+    color: #ffffff;
+    padding: 9px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+/* Required hover effect on links */
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: #252525;
+    background-color: #f1c7d3;
+}
+
+/* Indicates the current page */
+.nav-links a.active {
+    color: #252525;
+    background-color: #f1c7d3;
+}
+
+/* 4. Main content area */
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    padding: 35px 0 55px;
+}
+
+.hero {
+    padding: 65px 35px;
+    background-color: #f3dfe5;
+    border: 1px solid #e7c7d1;
+    border-radius: 12px;
+    margin-bottom: 35px;
+}
+
+.hero h1 {
+    max-width: 750px;
+}
+
+.hero p {
+    max-width: 750px;
+}
+
+.eyebrow {
+    color: #a34f6a;
+    font-size: 0.82rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.page-heading {
+    padding: 25px 0;
+    border-bottom: 2px solid #e7c7d1;
+    margin-bottom: 30px;
+}
+
+.page-heading p {
+    max-width: 750px;
+}
+
+/* Optional ID selector demonstration:
+   Add id="main-title" to an HTML heading to apply this rule. */
+#main-title {
+    color: #a34f6a;
+}
+
+/* 5. Content sections */
+.content-section {
+    margin: 35px 0;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e9e0e3;
+    border-radius: 10px;
+}
+
+.content-section h2 {
+    border-bottom: 1px solid #ead5dc;
+    padding-bottom: 10px;
+}
+
+/* 6. Button styling */
+.button {
+    display: inline-block;
+    padding: 11px 20px;
+    margin-top: 12px;
+    color: #ffffff;
+    background-color: #a34f6a;
+    border: 2px solid #a34f6a;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+    background-color: #77374c;
+    border-color: #77374c;
+}
+
+/* 7. Cards arranged with CSS Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.content-card {
+    padding: 22px;
+    background-color: #fff9fb;
+    border: 1px solid #e7c7d1;
+    border-radius: 8px;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(70, 35, 48, 0.12);
+}
+
+.content-card h3,
+.content-card h2 {
+    margin-top: 0;
+}
+
+.content-card a {
+    color: #a34f6a;
+    text-decoration: none;
+}
+
+.content-card a:hover,
+.content-card a:focus-visible {
+    text-decoration: underline;
+}
+
+/* 8. Lists */
+.term-list {
+    padding-left: 25px;
+}
+
+.term-list li {
+    margin-bottom: 10px;
+}
+
+/* 9. Code examples */
+pre {
+    padding: 18px;
+    overflow-x: auto;
+    color: #f8f8f8;
+    background-color: #292929;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+code {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+p code,
+li code {
+    padding: 2px 5px;
+    background-color: #f3e7eb;
+    border-radius: 3px;
+}
+
+/* 10. Tables */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+caption {
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddcdd3;
+    text-align: left;
+}
+
+thead {
+    color: #ffffff;
+    background-color: #a34f6a;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #faf0f3;
+}
+
+/* 11. Reference resources */
+.resource-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #e9e0e3;
+}
+
+.resource-item a {
+    color: #a34f6a;
+    font-weight: bold;
+}
+
+.resource-item a:hover,
+.resource-item a:focus-visible {
+    color: #77374c;
+}
+
+/* 12. About page layout */
+.about-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.profile-card {
+    padding: 25px;
+    background-color: #f3dfe5;
+    border: 1px solid #e7c7d1;
+    border-radius: 10px;
+}
+
+.profile-placeholder {
+    display: grid;
+    place-items: center;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #a34f6a;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* 13. Footer shared by all pages */
+.site-footer {
+    padding: 25px 5%;
+    color: #ffffff;
+    background-color: #252525;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+.site-footer a {
+    color: #f1c7d3;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+    color: #ffffff;
+}
+
+/* 14. Responsive layout for tablets and phones */
+@media (max-width: 700px) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        width: 100%;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .hero {
+        padding: 35px 22px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        padding: 18px;
+    }
+}
