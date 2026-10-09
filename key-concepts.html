@@ -1,30 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewpoint" content="width=device-width,intial-scale=1.0">
-  <title>KSU IT 3203</title>
-  <link rel="stylesheet" href="style-a.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Concepts | Understanding Web Design</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-  
 <body>
-  <main>
-    p {
-  color: black;
-  text-align: left;
-      } 
-    <h1>Key Concepts</h1>
-    <ul> </ul>
-    <ul> </ul>
-    <ul> </ul>
-    <ul> </ul>
-    <ul>  </ul>
-    <ul>  </ul>
-      
-  
-</nav>
-  </main>
+    <!-- Shared navigation -->
+    <header class="site-header">
+        <a class="logo" href="index.html">WEB DESIGN</a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html-structure.html">HTML</a></li>
+                <li><a href="css-design.html">CSS</a></li>
+                <li><a class="active" href="key-concepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <p class="eyebrow">WEB DESIGN BASICS</p>
+            <h1>Seven Key Concepts</h1>
+            <p>These terms help explain how modern websites are built.</p>
+        </section>
+
+        <section class="content-section">
+            <div class="card-grid">
+                <article class="content-card">
+                    <h2>1. HTML</h2>
+                    <p>
+                        HyperText Markup Language structures webpage content
+                        using elements such as headings, paragraphs, images,
+                        and links.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h2>2. CSS</h2>
+                    <p>
+                        Cascading Style Sheets controls the presentation of
+                        HTML, including colors, typography, spacing, and layout.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h2>3. DOM</h2>
+                    <p>
+                        The Document Object Model represents a webpage as a
+                        structured set of objects that scripts can access
+                        and modify.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h2>4. Responsive Design</h2>
+                    <p>
+                        Responsive design adapts a website's layout and content
+                        to different devices and screen sizes.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h2>5. CSS Grid</h2>
+                    <p>
+                        CSS Grid is a layout system that arranges content
+                        in rows and columns.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h2>6. Flexbox</h2>
+                    <p>
+                        Flexbox arranges items along a row or column and helps
+                        distribute available space between them.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h2>7. Accessibility</h2>
+                    <p>
+                        Accessibility means designing and developing websites
+                        so people with different abilities can use them.
+                        Descriptive links, image alt text, and semantic HTML
+                        are examples of helpful practices.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>How These Concepts Work Together</h2>
+            <p>
+                HTML provides the content and structure. CSS controls the
+                appearance and layout. The DOM represents the document in a
+                way scripts can interact with. Responsive design, Grid, and
+                Flexbox help the layout adapt to different devices, while
+                accessibility helps make the site usable by more people.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Created for IT 3203 as a class project.</p>
+        <p><a href="https://ksuweb.github.io/IT3203/" target="_blank"
+              rel="noopener noreferrer">IT 3203 Course Website</a></p>
+    </footer>
 </body>
 </html>
