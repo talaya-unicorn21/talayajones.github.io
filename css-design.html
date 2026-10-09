@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS and Visual Design | Understanding Web Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Shared navigation -->
+    <header class="site-header">
+        <a class="logo" href="index.html">WEB DESIGN</a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html-structure.html">HTML</a></li>
+                <li><a class="active" href="css-design.html">CSS</a></li>
+                <li><a href="key-concepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <p class="eyebrow">TOPIC TWO</p>
+            <h1>CSS and Visual Design</h1>
+            <p>CSS makes a webpage visually appealing and easier to navigate.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>What Is CSS?</h2>
+            <p>
+                CSS stands for Cascading Style Sheets. It controls how HTML
+                elements look, including their colors, fonts, sizes, spacing,
+                borders, and positions. Keeping styles in a separate file
+                also makes it easier to maintain a consistent design across
+                several pages.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h2>Three Types of CSS Selectors</h2>
+            <div class="card-grid">
+                <article class="content-card">
+                    <h3>Element Selector</h3>
+                    <p>Selects every element with a particular HTML tag.</p>
+                    <pre><code>p {
+    color: #555555;
+}</code></pre>
+                </article>
+
+                <article class="content-card">
+                    <h3>Class Selector</h3>
+                    <p>Selects elements that share a class name.</p>
+                    <pre><code>.highlight {
+    background-color: #f8e8ed;
+}</code></pre>
+                </article>
+
+                <article class="content-card">
+                    <h3>ID Selector</h3>
+                    <p>Selects the element with a specific ID.</p>
+                    <pre><code>#main-title {
+    color: #a34f6a;
+}</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Important Styling Properties</h2>
+            <ul class="term-list">
+                <li><strong>Color:</strong> Changes text color.</li>
+                <li><strong>Background-color:</strong> Sets an element's background.</li>
+                <li><strong>Font-family:</strong> Determines the typeface.</li>
+                <li><strong>Padding:</strong> Adds space inside an element's border.</li>
+                <li><strong>Margin:</strong> Adds space outside an element's border.</li>
+                <li><strong>Border:</strong> Draws an outline around an element.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Layout with CSS Grid and Flexbox</h2>
+            <p>
+                CSS Grid is useful for arranging content in rows and columns.
+                Flexbox is useful for arranging items in a row or column,
+                such as the navigation links at the top of this website.
+            </p>
+            <p>
+                Both approaches help create organized layouts without needing
+                to position every element manually.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h2>Hover Effects</h2>
+            <p>
+                A hover effect changes the appearance of a link or another
+                element when a visitor moves a mouse pointer over it.
+                Try hovering over the navigation links or cards on this site.
+            </p>
+            <a class="button" href="key-concepts.html">Explore Key Concepts</a>
+        </section>
+
+        <section class="content-section">
+            <h2>Responsive Design</h2>
+            <p>
+                Responsive design allows a website to adapt to different
+                screen sizes. CSS media queries can change the layout on
+                smaller devices so that content remains readable and
+                navigation is easier to use.
+            </p>
+            <pre><code>@media (max-width: 700px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}</code></pre>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Created for IT 3203 as a class project.</p>
+        <p><a href="https://ksuweb.github.io/IT3203/" target="_blank"
+              rel="noopener noreferrer">IT 3203 Course Website</a></p>
+    </footer>
+</body>
+</html>
