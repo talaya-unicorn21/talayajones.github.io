@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Self-Assessment Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Web Design Self-Assessment</h1>
+        <p>Test your understanding of HTML, CSS, and responsive design.</p>
+    </header>
+
+    <!-- Keep the same main navigation on every website page. -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html-structure.html">HTML</a></li>
+            <li><a href="css-design.html">CSS Design</a></li>
+            <li><a href="key-concepts.html">Key Concepts</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="quiz.html" aria-current="page">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <main class="quiz-container">
+        <section class="quiz-intro">
+            <h2>Check What You Have Learned</h2>
+            <p>
+                Answer all 10 questions based on the website's HTML, CSS,
+                and responsive design materials. You have 10 minutes.
+                You need at least 70% to pass.
+            </p>
+            <p class="timer-box">
+                Time remaining: <strong id="timer">10:00</strong>
+            </p>
+        </section>
+
+        <!-- Results are inserted here after the quiz is submitted. -->
+        <section id="results" class="results" aria-live="polite" hidden></section>
+
+        <form id="quiz-form" novalidate>
+            <fieldset class="question">
+                <legend>1. Fill in the blank (10 points)</legend>
+                <label for="q1">
+                    HTML stands for HyperText ______ Language.
+                </label>
+                <input type="text" id="q1" name="q1"
+                       autocomplete="off" required>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>2. Fill in the blank (10 points)</legend>
+                <label for="q2">
+                    CSS stands for ______ Style Sheets.
+                </label>
+                <input type="text" id="q2" name="q2"
+                       autocomplete="off" required>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>3. Multiple choice (10 points)</legend>
+                <p>Which HTML element creates a hyperlink?</p>
+                <label><input type="radio" name="q3" value="a" required>
+                    &lt;link&gt;</label>
+                <label><input type="radio" name="q3" value="b">
+                    &lt;a&gt;</label>
+                <label><input type="radio" name="q3" value="c">
+                    &lt;href&gt;</label>
+                <label><input type="radio" name="q3" value="d">
+                    &lt;url&gt;</label>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>4. Multiple choice (10 points)</legend>
+                <p>What is the main purpose of CSS?</p>
+                <label><input type="radio" name="q4" value="a" required>
+                    To store website information in a database</label>
+                <label><input type="radio" name="q4" value="b">
+                    To create the website's server</label>
+                <label><input type="radio" name="q4" value="c">
+                    To style and lay out web pages</label>
+                <label><input type="radio" name="q4" value="d">
+                    To replace all HTML elements</label>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>5. Multiple choice (10 points)</legend>
+                <p>Which HTML element is used for the largest standard heading?</p>
+                <label><input type="radio" name="q5" value="a" required>
+                    &lt;h6&gt;</label>
+                <label><input type="radio" name="q5" value="b">
+                    &lt;head&gt;</label>
+                <label><input type="radio" name="q5" value="c">
+                    &lt;heading&gt;</label>
+                <label><input type="radio" name="q5" value="d">
+                    &lt;h1&gt;</label>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>6. Multiple choice (10 points)</legend>
+                <p>Which CSS selector targets an element with class="card"?</p>
+                <label><input type="radio" name="q6" value="a" required>
+                    #card</label>
+                <label><input type="radio" name="q6" value="b">
+                    .card</label>
+                <label><input type="radio" name="q6" value="c">
+                    card()</label>
+                <label><input type="radio" name="q6" value="d">
+                    *card</label>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>7. Multiple choice (10 points)</legend>
+                <p>What does responsive design help a website do?</p>
+                <label><input type="radio" name="q7" value="a" required>
+                    Work only on desktop computers</label>
+                <label><input type="radio" name="q7" value="b">
+                    Avoid using CSS</label>
+                <label><input type="radio" name="q7" value="c">
+                    Adapt to different screen sizes</label>
+                <label><input type="radio" name="q7" value="d">
+                    Remove the need for HTML</label>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>8. Select all that apply (10 points)</legend>
+                <p>
+                    Which techniques can help make a website responsive?
+                    Select all correct answers.
+                </p>
+                <label><input type="checkbox" name="q8" value="a">
+                    CSS media queries</label>
+                <label><input type="checkbox" name="q8" value="b">
+                    Flexible layouts</label>
+                <label><input type="checkbox" name="q8" value="c">
+                    A viewport meta tag</label>
+                <label><input type="checkbox" name="q8" value="d">
+                    Using fixed-width layouts for every screen</label>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>9. True or false (10 points)</legend>
+                <p>The alt attribute can provide text describing an image.</p>
+                <label><input type="radio" name="q9" value="true" required>
+                    True</label>
+                <label><input type="radio" name="q9" value="false">
+                    False</label>
+            </fieldset>
+
+            <fieldset class="question">
+                <legend>10. Fill in the blank (10 points)</legend>
+                <label for="q10">
+                    The HTML attribute commonly used to provide alternative
+                    text for an image is ______.
+                </label>
+                <input type="text" id="q10" name="q10"
+                       autocomplete="off" required>
+            </fieldset>
+
+            <div class="quiz-actions">
+                <button type="submit" id="submit-quiz">Submit Quiz</button>
+                <button type="reset" class="reset-button">Retake Quiz</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            This website was created for IT 3203.
+            Visit the <a href="https://ksuweb.github.io/IT3203/">
+            IT 3203 course website</a>.
+        </p>
+    </footer>
+</body>
+</html>
