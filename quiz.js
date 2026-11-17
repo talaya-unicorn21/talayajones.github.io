@@ -255,3 +255,76 @@ form.addEventListener("reset", () => {
 
 // Start counting as soon as the quiz page loads.
 startTimer();
+
+/* Responsive quiz layout */
+.quiz-container {
+    width: min(900px, 94%);
+    margin: 25px auto;
+}
+
+.question {
+    width: 100%;
+    min-width: 0;
+}
+
+.question label {
+    display: block;
+    padding: 8px 4px;
+    line-height: 1.5;
+}
+
+/* Make text-answer fields fit smaller screens. */
+.question input[type="text"] {
+    width: 100%;
+    max-width: 450px;
+    min-height: 44px;
+}
+
+/* Tablet quiz layout */
+@media screen and (max-width: 768px) {
+    .quiz-container {
+        width: 95%;
+    }
+
+    .question {
+        padding: 18px;
+    }
+}
+
+/* Smartphone quiz layout */
+@media screen and (max-width: 480px) {
+    .quiz-container {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    .question {
+        padding: 14px;
+        margin: 16px 0;
+    }
+
+    .question legend {
+        font-size: 1rem;
+    }
+
+    .question input[type="radio"],
+    .question input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+
+    .quiz-actions {
+        flex-direction: column;
+    }
+
+    .quiz-actions button {
+        width: 100%;
+        min-height: 48px;
+    }
+
+    .final-score {
+        font-size: 2rem;
+    }
+}
+
